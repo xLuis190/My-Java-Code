@@ -5,15 +5,11 @@ import java.util.ArrayList;
  */
 public class Queues {
     ArrayList Queue;
-    private int head;
-    private int tail;
-    public Queues(ArrayList list){
-        Queue = list;
-        head = 0;
-        tail = Queue.size() -1;
+    public Queues(){
+        Queue = new ArrayList();
     }
-    public void EnQueue(String element){
-        Queue.add(tail,element);
+    public void EnQueue(Object element){
+        Queue.add(element);
     }
     public void DeQueue(){
         Queue.remove(0);
